@@ -1,0 +1,78 @@
+/* RESET STANDAR BROWSER */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* WADAH UTAMA KAFE (MEMBAGI DUA KOLOM) */
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* KOLOM KIRI (GAMBAR LENGKAP & DETAIL KONTAK) */
+.leftside {
+  width: 50%;
+  background-image: url("kopi.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 60px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Judul di atas, kontak di bawah */
+}
+
+.brand-content h1 {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 4.5rem;
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Efek bayangan biar teks putih terbaca jelas */
+}
+
+.contact-info {
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* KOLOM KANAN (DAFTAR MENU) */
+.rightside {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 60px;
+  overflow-y: auto; /* Bisa di-scroll ke bawah kalau menunya panjang */
+}
+
+/* BLOK KATEGORI MENU */
+.menu-section {
+  margin-bottom: 40px;
+}
+
+.menu-section h2 {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: #111111;
+  border-bottom: 2px solid #222222; /* Garis pembatas tebal di bawah kategori */
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+}
+
+/* KUNCI SUPAYA NAMA MENU DI KIRI & HARGA DI KANAN */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333333;
+}
